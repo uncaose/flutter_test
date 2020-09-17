@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import '../i18n/i18n.dart';
+import '../i18n/messages.dart';
 import '../widgets/tile_title.dart';
+
+final msg = Messages();
 
 class Number extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(I18n.of(context).title),
+        title: Text(msg.title),
       ),
       body: getList(context),
     );
@@ -18,22 +20,19 @@ class Number extends StatelessWidget {
       children: ListTile.divideTiles(
         context: context,
         tiles: [
-          TileTitle(I18n.of(context).tr('n0')),
-          TileTitle(I18n.of(context).tr('n1')),
-          TileTitle(I18n.of(context).tr('n2')),
-          TileTitle(I18n.of(context).tr('n3')),
-          TileTitle(I18n.of(context).tr('n4')),
-          TileTitle(I18n.of(context).tr('n5')),
-          TileTitle(I18n.of(context).tr('n6')),
-          TileTitle(I18n.of(context).tr('n7')),
-          TileTitle(I18n.of(context).tr('n8')),
-          TileTitle(I18n.of(context).tr('n9')),
-          TileTitle(I18n.of(context).tr('n10')),
-          TileTitle(I18n.of(context).tr('n11')),
-          TileTitle(I18n.of(context).tr('n12')),
-          ...['n0', 'n2', 'n9', 'n3', 'n12']
-              .map((e) => TileTitle(I18n.of(context).tr(e)))
-              .toList(),
+          TileTitle(msg.n0),
+          TileTitle(msg.n1),
+          TileTitle(msg.n2),
+          TileTitle(msg.n3),
+          TileTitle(msg.n4),
+          TileTitle(msg.n5),
+          TileTitle(msg.n6),
+          TileTitle(msg.n7),
+          TileTitle(msg.n8),
+          TileTitle(msg.n9),
+          TileTitle(msg.n10),
+          TileTitle(msg.n11),
+          TileTitle(msg.n12),
         ],
       ).toList(),
     );

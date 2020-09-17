@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import '../i18n/messages.dart';
-
-final msg = Messages();
+import 'package:easy_localization/easy_localization.dart';
 
 class Hello extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(msg.title),
+        title: Text('title').tr(),
       ),
       body: Center(
-        child: Text(msg.title),
+        child: Text('title'.tr()),
       ),
     );
   }

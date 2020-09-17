@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
-import '../i18n/messages.dart';
+import 'package:easy_localization/easy_localization.dart';
 import '../widgets/tile_title.dart';
-
-final msg = Messages();
 
 class Number extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(msg.title),
+        title: Text('title').tr(),
       ),
       body: getList(context),
     );
@@ -20,19 +18,24 @@ class Number extends StatelessWidget {
       children: ListTile.divideTiles(
         context: context,
         tiles: [
-          TileTitle(msg.n0),
-          TileTitle(msg.n1),
-          TileTitle(msg.n2),
-          TileTitle(msg.n3),
-          TileTitle(msg.n4),
-          TileTitle(msg.n5),
-          TileTitle(msg.n6),
-          TileTitle(msg.n7),
-          TileTitle(msg.n8),
-          TileTitle(msg.n9),
-          TileTitle(msg.n10),
-          TileTitle(msg.n11),
-          TileTitle(msg.n12),
+          TileTitle('n0'.tr()),
+          TileTitle('n1'.tr()),
+          TileTitle('n2'.tr()),
+          TileTitle('n3'.tr()),
+          TileTitle('n4'.tr()),
+          TileTitle('n5'.tr()),
+          TileTitle('n6'.tr()),
+          TileTitle('n7'.tr()),
+          TileTitle('n8'.tr()),
+          TileTitle('n9'.tr()),
+          TileTitle('n10'.tr()),
+          TileTitle('n11'.tr()),
+          TileTitle('n12'.tr()),
+          ...[]
+              .map(
+                (e) => TileTitle(e.tr()),
+              )
+              .toList(),
         ],
       ).toList(),
     );

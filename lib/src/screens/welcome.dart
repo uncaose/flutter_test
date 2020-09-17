@@ -1,27 +1,25 @@
 import 'package:flutter/material.dart';
-import '../i18n/messages.dart';
-
-final msg = Messages();
+import 'package:easy_localization/easy_localization.dart';
 
 class Welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(msg.welcome),
+        title: Text('welcome'.tr()),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             RaisedButton(
-              child: Text(msg.hello),
+              child: Text('hello'.tr()),
               onPressed: () {
                 Navigator.pushNamed(context, '/hello');
               },
             ),
             RaisedButton(
-              child: Text(msg.number),
+              child: Text('number'.tr()),
               onPressed: () {
                 Navigator.pushNamed(context, '/number');
               },

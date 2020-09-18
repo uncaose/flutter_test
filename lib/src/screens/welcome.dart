@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 
+String path =
+    'https://raw.githubusercontent.com/uncaose/flutter_test/easy_localization/assets/translations';
+
 class Welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

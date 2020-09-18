@@ -4,6 +4,7 @@
 # Ref
 - [easy_localization package documentation](https://pub.dev/documentation/easy_localization/latest/)
 - [aissat / easy_localization_loader](https://github.com/aissat/easy_localization_loader)
+-  []()
 
 # Proecss
 1. pubspec.yaml
@@ -36,7 +37,7 @@ flutter:
         "male":"Hi man ;) {}",
         "female":"Hello girl :) {}",
         "other":"Hello {}"
-    }
+      }
     }
     ```
 4. update runApp(), MatrialApp()

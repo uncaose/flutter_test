@@ -14,6 +14,36 @@
     "n10": "Ten",
     "n11": "Eleven",
     "n12": "Twelve",
+    "lang": {
+        "en": "English",
+        "ko": "Korea",
+        "ja": "Japan"
+    },
+    "lang.es" : "Spanish",
+    "msg": "{} are written in the {} language",
+    "msg_named": "Easy localization are written in the {lang} language",
+    "msg_mixed": "{} are written in the {lang} language",
+    "gender": {
+        "male": "Hi man ;) {}",
+        "female": "Hello girl :) {}",
+        "other": "Hello {}"
+    },
+    
+    "day": {
+        "zero": "{} day",
+        "one": "{} day",
+        "two": "{} days",
+        "few": "{} days",
+        "many": "{} days",
+        "other": "{} days"
+    },
+    "money": {
+        "zero": "You not have money",
+        "one": "You have {} dollar",
+        "many": "You have {} dollars",
+        "other": "You have {} dollars"
+    },
+    "welcome": "Welcome",
     "title": "Title",
     "widgetName": "Widget Name",
     "appName": "Application Name"

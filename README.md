@@ -24,22 +24,13 @@ flutter:
 ```
 2. maket dir
 -   assets/translations/
-3. make lang
-- {lang}.json
-- {lang}_{locale}.json
+3. make langs.csv
 
     *Example*
     ```json
-    {
-    "msg":"{} are written in the {} language",
-    "msg_named":"Easy localization are written in the {lang} language",
-    "msg_mixed":"{} are written in the {lang} language",
-    "gender":{
-        "male":"Hi man ;) {}",
-        "female":"Hello girl :) {}",
-        "other":"Hello {}"
-      }
-    }
+    str,en,ko,ja
+    title:Title,제목,題名
+    ...
     ```
 4. update runApp(), MatrialApp()
     ```dart

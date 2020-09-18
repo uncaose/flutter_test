@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-class TileTitle extends StatelessWidget {
+// ignore: must_be_immutable
+class Tiletitle extends StatelessWidget {
   String title;
   String prefix;
   String subfix;
-  TileTitle(this.title, {this.prefix, this.subfix});
+  Tiletitle(this.title, {this.prefix, this.subfix});
 
   @override
   Widget build(BuildContext context) {

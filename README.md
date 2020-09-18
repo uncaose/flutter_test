@@ -3,8 +3,8 @@
 
 # Ref
 - [easy_localization package documentation](https://pub.dev/documentation/easy_localization/latest/)
+- [easy_localization/example/resources/langs/](https://github.com/aissat/easy_localization/blob/master/example/resources/langs/)
 - [aissat / easy_localization_loader](https://github.com/aissat/easy_localization_loader)
--  []()
 
 # Proecss
 1. pubspec.yaml
@@ -15,6 +15,7 @@ flutter:
   easy_localization:
   easy_localization_loader:
     git: https://github.com/aissat/easy_localization_loader.git
+  csv:
 
 flutter:
   uses-material-design: true
@@ -44,29 +45,38 @@ flutter:
     ```dart
     import 'package:flutter/material.dart';
     import 'package:flutter_localizations/flutter_localizations.dart';
+    import 'package:easy_localization_loader/easy_localization_loader.dart';
     import 'package:easy_localization/easy_localization.dart';
 
-    void main() {
-    runApp(
-        EasyLocalization(
-        supportedLocales: [Locale('en', 'US'), Locale('de', 'DE')],
-        path: 'assets/translations', // <-- change patch to your
-        fallbackLocale: Locale('en', 'US'),
-        child: MyApp()
-        ),
+    void main() => runApp(
+      EasyLocalization(
+        supportedLocales: [
+          Locale('en'),
+          Locale('ko'),
+          Locale('ja'),
+        ],
+        path: 'assets/translations/langs.csv',
+        assetLoader: CsvAssetLoader(),
+        fallbackLocale: Locale('en'),
+        child: App(),
+      ),
     );
-    }
+    ```
+    ```dart
+    import 'package:flutter/material.dart';
+    import 'package:easy_localization/easy_localization.dart';
+    import './routes.dart';
 
-    class MyApp extends StatelessWidget {
-    @override
-    Widget build(BuildContext context) {
+    class App extends StatelessWidget {
+      @override
+      Widget build(BuildContext context) {
         return MaterialApp(
-        localizationsDelegates: context.localizationDelegates,
-        supportedLocales: context.supportedLocales,
-        locale: context.locale,
-        home: MyHomePage()
+          localizationsDelegates: context.localizationDelegates,
+          supportedLocales: context.supportedLocales,
+          locale: context.locale,
+          routes: routes,
         );
-    }
+      }
     }
     ```
 6. udpate translate text

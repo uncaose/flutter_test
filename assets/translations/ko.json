@@ -1,0 +1,49 @@
+{
+    "hello": "Local-환영",
+    "number": "Local-숫자",
+    "n0": "Local-영",
+    "n1": "Local-하나",
+    "n2": "Local-둘",
+    "n3": "Local-셋",
+    "n4": "Local-넷",
+    "n5": "Local-다섯",
+    "n6": "Local-여섯",
+    "n7": "Local-일곱",
+    "n8": "Local-여덥",
+    "n9": "Local-아홉",
+    "n10": "Local-열",
+    "n11": "Local-열하나",
+    "n12": "Local-열둘",
+    "lang": {
+        "en": "Local-영어",
+        "ko": "Local-한글",
+        "ja": "Local-일본"
+    },
+    "lang.es": "Local-스페인",
+    "msg": "Local-{}는 {} 언어로 작성되었습니다.",
+    "msg_named": "Local-쉬운 현지화는 {lang} 언어로 작성되었습니다.",
+    "msg_mixed": "Local-{}는 {lang} 언어로 작성되었습니다.",
+    "gender": {
+        "male": "Local-안녕하세요 ;) {}",
+        "female": "Local-안녕하세요 아가씨 :) {}",
+        "other": "Local-안녕하세요 {}"
+    },
+    "day": {
+        "zero": "Local-{} 일",
+        "one": "Local-{} 일",
+        "two": "Local-{} 일",
+        "few": "Local-{} 일",
+        "many": "Local-{} 일",
+        "other": "Local-{} 일"
+    },
+    "money": {
+        "zero": "Local-금액이 없습니다.",
+        "one": "Local-당신은 {} $ 보유했습니다.",
+        "many": "Local-당신은 {} $ 보유했습니다.",
+        "other": "Local-당신은 {} $ 보유했습니다."
+    },
+    "welcome": "Local-환영합니다.",
+    "title": "Local-제목",
+    "widgetName": "Local-위젯 이름",
+    "appName": "Local-애플리케이션 이름"
+}

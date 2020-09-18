@@ -1,0 +1,49 @@
+{
+    "hello": "Local-ようこそ",
+    "number": "Local-数字",
+    "n0": "Local-ヤング",
+    "n1": "Local-れい",
+    "n2": "Local-いち",
+    "n3": "Local-に",
+    "n4": "Local-さん",
+    "n5": "Local-よん",
+    "n6": "Local-ご",
+    "n7": "Local-ろく",
+    "n8": "Local-なな",
+    "n9": "Local-はち",
+    "n10": "Local-きゅう",
+    "n11": "Local-じゅう",
+    "n12": "Local-じゅういち",
+    "lang": {
+        "en": "Local-英語",
+        "ko": "Local-ハングル",
+        "ja": "Local-日本の"
+    },
+    "lang.es": "Local-スペイン",
+    "msg": "Local-{}は{}言語で書かれています",
+    "msg_named": "Local-簡単なローカリゼーションは{lang}言語で書かれています",
+    "msg_mixed": "Local-{}は{lang}言語で書かれています",
+    "gender": {
+        "male": "Local-こんにちは;）{}",
+        "female": "Local-ハローガール:) {}",
+        "other": "Local-こんにちは{}"
+    },
+    "day": {
+        "zero": "Local-{}日",
+        "one": "Local-{}日",
+        "two": "Local-{}日",
+        "few": "Local-{}日",
+        "many": "Local-{}日",
+        "other": "Local-{}日"
+    },
+    "money": {
+        "zero": "Local-金額がありません。",
+        "one": "Local-あなたは,{}$保有している。",
+        "many": "Local-あなたは,{}$保有している。",
+        "other": "Local-あなたは,{}$保有している。"
+    },
+    "welcome": "Local-ようこそ",
+    "title": "Local-タイトル",
+    "widgetName": "Local-ウィジェットの名前",
+    "appName": "Local-アプリケーション名"
+}

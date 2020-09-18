@@ -1,18 +1,32 @@
+import 'dart:io';
 import 'dart:convert';
-import 'package:http/http.dart' as http;
+import 'package:easy_localization_loader/easy_localization_loader.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:http/http.dart' as http;
 import 'package:easy_localization/easy_localization.dart';
 import 'src/app.dart';
 
-class HttpAssetLoader extends AssetLoader {
+// reference asset_load.dart comment
+class FileAssetLoader extends AssetLoader {
+  bool isFirstLoad = false;
   @override
   Future<Map<String, dynamic>> load(String path, Locale locale) async {
     try {
+      final result = await InternetAddress.lookup('google.com');
+      if (result.isEmpty || result[0].rawAddress.isEmpty) {
+        throw new SocketException('SocketException: Failed host lookup');
+      }
+
       return http
-          .get('$path${locale.languageCode}.json') // modify path
+          .get(
+              'https://raw.githubusercontent.com/uncaose/flutter_test/easy_localization/assets/translations/${locale.languageCode}.json')
           .then((response) => json.decode(response.body.toString()));
+    } on SocketException catch (_) {
+      return json.decode(await rootBundle
+          .loadString('$path/${localeToString(locale, separator: "-")}.json'));
     } catch (e) {
-      //Catch network exceptions
+      //Catch File exceptions
       return Future.value();
     }
   }
@@ -26,9 +40,8 @@ void main() {
         Locale('ko'),
         Locale('ja'),
       ],
-      path:
-          'https://raw.githubusercontent.com/uncaose/flutter_test/easy_localization/assets/translations/',
-      assetLoader: HttpAssetLoader(),
+      path: 'assets/translations',
+      assetLoader: FileAssetLoader(),
       fallbackLocale: Locale('en'),
       child: App(),
     ),

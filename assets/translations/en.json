@@ -1,0 +1,49 @@
+{
+    "hello": "Local-Hello",
+    "number": "Local-Number",
+    "n0": "Local-Zero",
+    "n1": "Local-One",
+    "n2": "Local-Two",
+    "n3": "Local-Three",
+    "n4": "Local-Four",
+    "n5": "Local-Five",
+    "n6": "Local-Six",
+    "n7": "Local-Seven",
+    "n8": "Local-Eight",
+    "n9": "Local-Nine",
+    "n10": "Local-Ten",
+    "n11": "Local-Eleven",
+    "n12": "Local-Twelve",
+    "lang": {
+        "en": "Local-English",
+        "ko": "Local-Korea",
+        "ja": "Local-Japan"
+    },
+    "lang.es": "Local-Spanish",
+    "msg": "Local-{} are written in the {} language",
+    "msg_named": "Local-Easy localization are written in the {lang} language",
+    "msg_mixed": "Local-{} are written in the {lang} language",
+    "gender": {
+        "male": "Local-Hi man ;) {}",
+        "female": "Local-Hello girl :) {}",
+        "other": "Local-Hello {}"
+    },
+    "day": {
+        "zero": "Local-{} day",
+        "one": "Local-{} day",
+        "two": "Local-{} days",
+        "few": "Local-{} days",
+        "many": "Local-{} days",
+        "other": "Local-{} days"
+    },
+    "money": {
+        "zero": "Local-You not have money",
+        "one": "Local-You have {} dollar",
+        "many": "Local-You have {} dollars",
+        "other": "Local-You have {} dollars"
+    },
+    "welcome": "Local-Welcome",
+    "title": "Local-Title",
+    "widgetName": "Local-Widget Name",
+    "appName": "Local-Application Name"
+}

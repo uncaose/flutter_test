@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'dart:convert';
-import 'package:easy_localization_loader/easy_localization_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
@@ -9,7 +8,6 @@ import 'src/app.dart';
 
 // reference asset_load.dart comment
 class FileAssetLoader extends AssetLoader {
-  bool isFirstLoad = false;
   @override
   Future<Map<String, dynamic>> load(String path, Locale locale) async {
     try {
@@ -32,18 +30,16 @@ class FileAssetLoader extends AssetLoader {
   }
 }
 
-void main() {
-  runApp(
-    EasyLocalization(
-      supportedLocales: [
-        Locale('en'),
-        Locale('ko'),
-        Locale('ja'),
-      ],
-      path: 'assets/translations',
-      assetLoader: FileAssetLoader(),
-      fallbackLocale: Locale('en'),
-      child: App(),
-    ),
-  );
-}
+void main() => runApp(
+      EasyLocalization(
+        supportedLocales: [
+          Locale('en'),
+          Locale('ko'),
+          Locale('ja'),
+        ],
+        path: 'assets/translations',
+        assetLoader: FileAssetLoader(),
+        fallbackLocale: Locale('en'),
+        child: App(),
+      ),
+    );

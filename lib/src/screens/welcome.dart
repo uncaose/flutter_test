@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import '../i18n/i18n.dart';
 
 class Welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(I18n.of(context).tr('welcome')),
+        title: Text('welcome'),
       ),
       body: Center(
         child: Column(

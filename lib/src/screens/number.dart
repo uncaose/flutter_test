@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../drawers.dart';
 import '../widgets/tile_title.dart';
 
 class Number extends StatelessWidget {
@@ -6,13 +7,14 @@ class Number extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Number'),
+        title: Text('Hello'),
       ),
-      body: getList(context),
+      drawer: Drawers(),
+      body: welcome(context),
     );
   }
 
-  Widget getList(BuildContext context) {
+  Widget welcome(BuildContext context) {
     return ListView(
       children: ListTile.divideTiles(
         context: context,

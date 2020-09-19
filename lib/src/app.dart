@@ -6,7 +6,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'flutter_test',
-      initialRoute: '/',
+      initialRoute: '/login',
       routes: routes,
     );
   }

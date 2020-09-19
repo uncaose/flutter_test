@@ -23,6 +23,12 @@ class Welcome extends StatelessWidget {
                 Navigator.pushNamed(context, '/number');
               },
             ),
+            RaisedButton(
+              child: Text('Login'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/login');
+              },
+            ),
           ],
         ),
       ),

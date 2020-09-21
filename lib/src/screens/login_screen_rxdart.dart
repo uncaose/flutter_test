@@ -11,7 +11,7 @@ class _LoginScreenRxdartState extends State<LoginScreenRxdart> {
   @override
   Widget build(BuildContext context) {
     return MyScaffold(
-      title: Text('Login'),
+      title: Text('Login BehaviorSubject'),
       body: Container(
         margin: EdgeInsets.all(8.0),
         child: Form(

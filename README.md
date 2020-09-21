@@ -17,4 +17,7 @@
     - Scaffold(drawer: Drawers())
 -   [login_statefull_mixin](https://github.com/uncaose/flutter_test/tree/login_stateful_mixin)
     - Validation after Submit Clicked.
-    
+-   [login_bloc](https://github.com/uncaose/flutter_test/tree/login_bloc)
+    - validation after submit clicked
+    - Login page is Error occurred from second time.
+    - Login rxdart is no errors using the cache.

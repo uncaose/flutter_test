@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import '../blocs/bloc.dart';
+import '../blocs/bloc_rxdart.dart';
 import '../my_scaffold.dart';
 
-class LoginScreen extends StatefulWidget {
+class LoginScreenRxdart extends StatefulWidget {
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  _LoginScreenRxdartState createState() => _LoginScreenRxdartState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _LoginScreenRxdartState extends State<LoginScreenRxdart> {
   @override
   Widget build(BuildContext context) {
     return MyScaffold(

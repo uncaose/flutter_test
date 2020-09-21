@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
+import '../my_scaffold.dart';
 import '../widgets/tile_title.dart';
 
 class Number extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Number'),
-      ),
+    return MyScaffold(
+      title: Text('Number'),
       body: getList(context),
     );
   }

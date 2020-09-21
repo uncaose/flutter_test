@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
+import '../my_scaffold.dart';
 
 class Hello extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Hello'),
-      ),
+    return MyScaffold(
+      title: Text('Hello'),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

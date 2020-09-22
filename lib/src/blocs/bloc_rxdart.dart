@@ -11,6 +11,9 @@ class Bloc extends Object with Validators {
   Function(String) get changeEmail => _email.sink.add;
   Function(String) get changePassword => _passwd.sink.add;
 
+  get getEmail => _email.value;
+  get getPassword => _passwd.value;
+
   dispose() {
     _email.close();
     _passwd.close();

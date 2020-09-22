@@ -23,6 +23,12 @@ class Welcome extends StatelessWidget {
               },
             ),
             RaisedButton(
+              child: Text('Login myscaffold'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/login_myscaffold');
+              },
+            ),
+            RaisedButton(
               child: Text('Login'),
               onPressed: () {
                 Navigator.pushNamed(context, '/login');

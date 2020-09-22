@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import '../blocs/bloc.dart';
+import '../my_scaffold.dart';
 
-class LoginScreen extends StatefulWidget {
+class LoginScreenMyScaffold extends StatefulWidget {
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  _LoginScreenMyScaffoldState createState() => _LoginScreenMyScaffoldState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _LoginScreenMyScaffoldState extends State<LoginScreenMyScaffold> {
   String email;
   String password;
   GlobalKey<ScaffoldState> _scaffoldKey;
@@ -19,11 +20,10 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    // Multiple widgets GlobalKey Error
+    return MyScaffold(
       key: _scaffoldKey,
-      appBar: AppBar(
-        title: Text('Login'),
-      ),
+      title: Text('Login'),
       body: Container(
         margin: EdgeInsets.all(8.0),
         child: Form(

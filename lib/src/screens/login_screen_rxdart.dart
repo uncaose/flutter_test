@@ -12,18 +12,20 @@ class _LoginScreenRxdartState extends State<LoginScreenRxdart> {
   Widget build(BuildContext context) {
     return MyScaffold(
       title: Text('Login BehaviorSubject'),
-      body: Container(
-        margin: EdgeInsets.all(8.0),
-        child: Form(
-          child: Column(
-            children: <Widget>[
-              fieldEmail(),
-              fieldPassword(),
-              _submit(),
-            ],
+      body: Builder(builder: (BuildContext context) {
+        return Container(
+          margin: EdgeInsets.all(8.0),
+          child: Form(
+            child: Column(
+              children: <Widget>[
+                fieldEmail(),
+                fieldPassword(),
+                _submit(context),
+              ],
+            ),
           ),
-        ),
-      ),
+        );
+      }),
     );
   }
 
@@ -61,7 +63,7 @@ class _LoginScreenRxdartState extends State<LoginScreenRxdart> {
     );
   }
 
-  Widget _submit() {
+  Widget _submit(BuildContext context) {
     return RaisedButton(
       color: Colors.blue,
       child: Text(
@@ -69,7 +71,8 @@ class _LoginScreenRxdartState extends State<LoginScreenRxdart> {
         style: TextStyle(color: Colors.white),
       ),
       onPressed: () {
-        print('onPressed Submit');
+        Scaffold.of(context).showSnackBar(
+            SnackBar(content: Text('${bloc.getEmail}, ${bloc.getPassword}')));
       },
     );
   }

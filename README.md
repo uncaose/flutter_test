@@ -7,6 +7,12 @@
 - Login rxdart is no errors using the cache.
 
 ## welcome
-![login_bloc_welcome](./login_bloc_welcome.png)
-![login_bloc_login](./login_bloc_login.png)
-![login_bloc_login_rxdart](./login_bloc_login_rxdart.png)
+- my_scaffold.dart build
+- using snackbar on my_scaffold and origin scaffold
+- Attentoin: Multiple widgets used the same GlobalKey. on my_scaffold
+
+### Images
+- Welcome
+    ![welcome.png](./welcome.png)
+- Multiple widgets used the same GlobalKey.
+    ![Multiple widgets used the same GlobalKey.](./MultipleWidgetsUsedTheSameGlobalKey.png)

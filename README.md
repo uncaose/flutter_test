@@ -13,6 +13,6 @@
 
 ### Images
 - Welcome
-    ![welcome.png](./welcome.png)
+    - ![welcome.png](./welcome.png)
 - Multiple widgets used the same GlobalKey.
-    ![Multiple widgets used the same GlobalKey.](./MultipleWidgetsUsedTheSameGlobalKey.png)
+    - ![Multiple widgets used the same GlobalKey.](./MultipleWidgetsUsedTheSameGlobalKey.png)
